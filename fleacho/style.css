@@ -1,0 +1,86 @@
+body{
+
+}
+span{
+
+    text-align: center;
+    font-size: 100px;
+
+
+}
+#outerContainer{
+    /*background: url("menu.png") no-repeat;*/
+    display: block;
+}
+#container ,#container1, #container2 ,#container3,#container4,#container5{
+    width: 600px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+}
+
+
+.circle1 {
+    border-radius: 50%;
+    background-color: deepskyblue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+.circle2 {
+    border-radius: 50%;
+    background-color: #ff2120;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    display: none;
+    animation: scaleIn1 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+.item , .item2 ,.item1 {
+    z-index: 100;
+    padding: 5px;
+    display: inline;
+}
+
+.item img {
+    width: 15px;
+}
+.item1 img {
+    width: 15px;
+}
+.item2 img {
+    width: 15px;
+}
+.hidden {
+    visibility: hidden;
+}
+@keyframes scaleIn1 {
+    from {
+        transform: scale(.5, .5);
+        opacity: .3;
+    }
+    to {
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+    }
+}
+@keyframes scaleIn   {
+    from {
+        transform: scale(.5, .5);
+        opacity: .3;
+    }
+    to {
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+    }
+}
